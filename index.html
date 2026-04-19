@@ -814,7 +814,11 @@
     <div class="faq">
       <div class="faq-item">
         <div class="faq-q">Does my data ever leave my warehouse?</div>
-        <div class="faq-a">In v0.1, uploaded CSVs are loaded into an in-memory DuckDB instance scoped to your browser session — destroyed when you close the tab, nothing persisted server-side. Coming soon: direct warehouse connectors where SQL runs in your Snowflake or BigQuery instance, under your IAM. Query results are rendered and discarded — never stored, never trained on.</div>
+        <div class="faq-a">
+            <strong>v0.1</strong> keeps things simple and private: uploaded CSVs are loaded into an in-memory DuckDB instance scoped to your browser session — destroyed when you close the tab, nothing is ever persisted server-side.
+            <br><br>
+            <strong>Coming soon:</strong> direct warehouse connectors where SQL runs in your Snowflake or BigQuery instance, under your IAM. Query results are rendered and discarded — never stored, never trained on.
+        </div>
       </div>
       <div class="faq-item">
         <div class="faq-q">How is this different from ChatGPT with a SQL plugin?</div>
